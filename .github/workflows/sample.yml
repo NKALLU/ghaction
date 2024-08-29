@@ -14,3 +14,6 @@ jobs:
         run: |
            echo " Hello Nanda"
            sleep 10
+      - name : run mult-line
+        run: |
+            echo "{{ github.workspace }}"
