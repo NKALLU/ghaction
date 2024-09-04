@@ -18,5 +18,5 @@ jobs:
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
     - run: |
-        docker build . -t nkacr.azurecr.io/myapp:1.0.0
-        docker push nkacr.azurecr.io/myapp:1.0.0
+        docker build . -t nkacr.azurecr.io/myapp:${{ github.sha }}
+        docker push nkacr.azurecr.io/myapp:${{ github.sha }}
