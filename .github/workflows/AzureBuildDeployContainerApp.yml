@@ -1,4 +1,4 @@
-ame: Build and Deploy Container App
+name: Build and Deploy Container App
 
 on:
   workflow_dispatch:
